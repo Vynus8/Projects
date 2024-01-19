@@ -1,0 +1,148 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+#tc-logo {
+    height: 50px;
+    width: auto;
+    margin: 0 10px;
+}
+
+nav {
+    display: flex;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    text-align: right;
+    background-color: black;
+    top: 0px;
+    z-index: 10;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    display: inline;
+    margin: 10px;
+    color: gray;
+}
+
+a {
+    color: gray;
+    text-decoration: underline;
+}
+
+.banner {
+    width: 80%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    background-image: url(./Resources/img-mission-background.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.banner-text {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 62px;
+    flex-wrap: wrap;
+}
+
+#teaOfTheMonth {
+    width: 1000px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#tea-cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tea-card {
+    width: 300px;
+    height: auto;
+    margin: 15px;
+}
+
+.tea-card h4 {
+    margin: 10px;
+}
+
+#tea-cards img {
+    width: 300px;
+    height: 200px;
+}
+
+#locations-section {
+    height: 700px;
+    width: 1200px;
+    background-image: url('./Resources/img-locations-background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#locations-h {
+    width: 1200px;
+    z-index: 1;
+    text-align: center;
+}
+
+.locations {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.location {
+    background-color: black;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.contacts {
+    height: 200px;
+}
+
+.copyright {
+    margin-left: 20px;
+    text-align: left;
+    width: 100%;
+}

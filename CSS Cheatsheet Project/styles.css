@@ -1,0 +1,52 @@
+body {
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    border: 2px solid;
+    padding: 15px;
+    margin-bottom: 50px;
+    font-family: math, sans-serif;
+}
+
+table {
+    border: 2px solid black;
+    width: 1000px;
+}
+
+tr,
+td,
+th {
+    border: 2px solid;
+}
+
+caption {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+    font-family: math, sans-serif;
+    letter-spacing: 4px;
+}
+
+.bg-neutral {
+    background-color: aliceblue;
+}
+
+.bg-gradient {
+    background: linear-gradient(120deg, violet, aqua);
+}
+
+.property {
+    font-weight: bold;
+    font-family: math, sans-serif;
+}
+
+.values {
+    font-family: monospace, serif;
+}

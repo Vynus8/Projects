@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DotGothic16&family=Genos:wght@100&display=swap');
+
+
+
+/* Universal Styles */
+
+html {
+    font-family: "Genos", monospace, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Navigation Bar Styles ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    box-shadow: inset 0px -7px 20px -18px pink;
+    z-index: 100;
+    background-color: rgba(250, 17, 245, 0.2);
+}
+
+nav li,
+footer li {
+    display: inline;
+}
+
+nav a,
+footer a {
+    color: azure;
+    font-weight: bold;
+    margin: 0 3rem;
+    text-align: center;
+}
+
+nav a:hover,
+footer a:hover {
+    color: #ea228a;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 45rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Banner / Welcome / Home Section ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container.banner {
+    background-image: url(./Images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 45rem;
+    justify-content: flex-end;
+}
+
+#welcome {
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    width: 30rem;
+    text-align: end;
+    color: white;
+    background-color: rgba(136, 50, 123, 0.6);
+    padding: 0 2rem;
+    border-radius: 4rem 0 0 4rem;
+}
+
+.container.banner p {
+    color: white;
+    width: 25rem;
+    text-align: end;
+    margin: 0.5rem 0 0 3rem;
+}
+
+/* Pano / About Section ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container.pano {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 45rem;
+    height: auto;
+}
+
+.container.pano img {
+    max-width: 20%;
+    min-width: 15rem;
+    height: auto;
+    width: auto;
+    border-radius: 20rem;
+    border: 2px solid black;
+    padding: 0.4375rem;
+    margin: 2rem 0;
+}
+
+.container.pano p {
+    width: 15rem;
+    height: auto;
+    text-align: justify;
+    font-weight: 700;
+}
+
+/* Discord Invite Section ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container.invite {
+    background-color: #040301;
+    justify-content: center;
+}
+
+.container.invite img,
+.container.contact img {
+    width: auto;
+    max-height: 45rem;
+    height: auto;
+}
+
+#discord {
+    border: 2px solid rgba(176, 83, 229, 1);
+    border-radius: 1rem;
+    max-width: 36%;
+    width: auto;
+    height: auto;
+    background: hsla(259, 85%, 16%, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+#discord .h,
+#discord a {
+    color: white;
+    margin: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+#discord a {
+    border: 1px solid;
+    box-shadow: 0px 0px 20px 0px white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#discord a:hover {
+    background-color: white;
+    color: hsla(259, 85%, 16%, 1);
+    border: 1px solid hsla(259, 85%, 16%, 1);
+}
+
+/* Shop Section ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#shop {
+    display: flex;
+}
+
+#teaser {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ad {
+    display: flex;
+    width: 50%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(176, 83, 229, 1);
+}
+
+#ad a {
+    width: 10rem;
+    margin: 1rem;
+    letter-spacing: 0.1rem;
+    border: 2px solid rgba(176, 83, 229, 1);
+    padding: .4rem;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 20px 0px rgba(176, 83, 229, 1);
+}
+
+#ad a:hover {
+    background-color: rgba(176, 83, 229, 1);
+    color: white;
+}
+
+.container.shop h1 {
+    font-size: 4rem;
+}
+
+.container.shop h2 {
+    font-size: 2rem;
+}
+
+.container.shop img {
+    width: 15rem;
+    height: auto;
+}
+
+.container.shop img:hover {
+    width: 20rem;
+    height: auto;
+}
+
+/* Contact Section ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container.contact {
+    background-color: black;
+    margin-bottom: -4rem;
+    align-items: flex-start;
+}
+
+#i,
+#i-two,
+#f {
+    height: calc(100% - 4rem);
+    width: 33.33%;
+}
+
+.container.contact #i {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.container.contact #f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+#f h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 3rem 0;
+}
+
+form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#f label {
+    color: white;
+}
+
+#f input {
+    width: 12rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0 0;
+}
+
+#f form #submit {
+    border: 1px solid;
+    box-shadow: 0px 0px 20px 0px white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 6rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+#f form #submit:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Footer Section ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    box-shadow: inset 0px 7px 20px -18px pink;
+    z-index: 100;
+    background-color: rgba(250, 17, 245, 0.2);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    font-weight: 700;
+}
+
+footer p {
+    width: auto;
+    margin-left: 1rem;
+    color: white;
+}
+
+footer img {
+    width: auto;
+    height: 1.5rem;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    #lewd-girl-2,
+    #lewd-girl-3,
+    #lewd-girl-4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    #pano2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container.pano p {
+        margin: 0 1rem;
+    }
+    .container.invite img {
+        display: none;
+    }
+
+    #discord {
+        max-width: 50%;
+        background-color: transparent;
+    }
+
+    #shop {
+        flex-direction: column;
+    }
+
+    #teaser {
+        margin-bottom: 5rem;
+    }
+
+    nav a,
+    footer a {
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    html {
+        font-size: 10px;
+    }
+}

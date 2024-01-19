@@ -1,0 +1,37 @@
+.landing-body {
+    box-sizing: border-box;
+    background: linear-gradient(90deg, violet, aqua);
+}
+
+.landing-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-family: monospace, sans-serif;
+    border: 2px solid aqua;
+    border-radius: 50px;
+    color: #F8F8F8;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
+    background: linear-gradient(120deg, aqua, violet);
+    text-shadow: 0 -2px #0c960c;
+}
+
+.button:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    border-color: azure;
+    font-weight: bold;
+}
+
+.button:active {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    background: linear-gradient(120deg, rgb(0, 162, 255), rgb(238, 130, 173));
+}

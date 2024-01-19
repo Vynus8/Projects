@@ -1,0 +1,115 @@
+/* Reset box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove margin and padding on most elements */
+body,
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styling (bullet points and numbers) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default styles for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set default styles for headings */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Remove default styles for form elements */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+}
+
+/* Standardize border and box model */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default styles for table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Ensure vertical alignment consistency */
+button,
+input,
+select,
+textarea {
+    vertical-align: middle;
+}
+
+/* Reset form elements to avoid inconsistent styling */
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+}
+
+/* Reset button and input elements to a consistent appearance */
+button,
+input {
+    overflow: visible;
+}
+
+/* Address styling inconsistencies in Firefox */
+button,
+select {
+    text-transform: none;
+}
+
+/* Ensure consistent box sizing for all elements */
+html {
+    font-size: 16px;
+}
+
+/* Additional resets or styles can be added as needed */
